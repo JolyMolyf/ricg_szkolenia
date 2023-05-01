@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_text_blocks",
+  "info": {
+    "singularName": "image-text-block",
+    "pluralName": "image-text-blocks",
+    "displayName": "ImageTextBlock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "TextSubtitle": {
+      "type": "string"
+    }
+  }
+}
